@@ -1,0 +1,149 @@
+/* -- Universal Styles -- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h2,
+h3 {
+    color: #303c49;
+}
+
+fieldset {
+    border: none;
+}
+
+/* -- Header -- */
+
+.banner h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.banner {
+    background-color: #303c49;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.secondary-banner {
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.secondary-banner h2 {
+    margin: 40px 0 20px;
+}
+
+.secondary-banner p {
+    color: rgba(128, 128, 128, 0.75);
+    margin-bottom: 3.5rem;
+}
+
+.border-top {
+    height: 5px;
+    background-color: #303c49;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.border-bottom {
+    height: 2px;
+    background-color: #303c49;
+    max-width: 90%;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* -- Contact Information -- */ 
+
+.main-form,
+.newsletter {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.padding-bottom,
+.main-form h2 {
+    padding-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+#city {
+  background: rgba(255, 255, 255, 0.445);
+  border: none;
+  margin: 10px 0 20px;
+  padding: 15px; 
+  background-color: rgba(128, 128, 128, .1);
+  border-radius: 5px;
+  width: 100%
+}
+
+label,
+p {
+    color: rgb(128, 128, 128);
+}
+
+/* -- Newsletter -- */ 
+
+input[type="checkbox"],
+input[type="radio"] {
+  background: rgba(255, 255, 255, 0.445);
+  border: none;
+  margin: 10px 0 20px;
+  padding: 15px; 
+  background-color: rgba(128, 128, 128, .1);
+  border-radius: 5px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.checkbox-label,
+.subscriptions {
+    padding-left: .85rem;
+}
+
+button {
+    padding: 20px 40px;
+    color: white;
+    background-color: #52bab3;
+    width: 100%;
+    border: 1px solid #52bab3;
+    border-radius: 5px;
+}
+
+ .sign-up {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.submit-btn {
+    margin: 2rem 0;
+}
+
+.sign-up p {
+    margin: 10px 0 280px;
+    color: rgba(128, 128, 128, .75)
+}
+
+
+
+
