@@ -17,6 +17,10 @@ fieldset {
     border: none;
 }
 
+.half-width {
+    width: 50%;
+}
+
 /* -- Header -- */
 
 .banner h1 {
@@ -157,7 +161,21 @@ button {
 /* -- Media Query -- */ 
 
 @media (min-width: 768px) {
+    .main-form,
+    .newsletter {
+        width: 65%;
+        margin: auto;
+    }
+
+    .border-top,
+    .border-bottom {
+        max-width: 65%;
+    }
     
+    .row {
+        display: flex;
+    }
+
 }
 
 
