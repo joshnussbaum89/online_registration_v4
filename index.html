@@ -25,16 +25,16 @@
  
 <!-- Contact Information -->
 
-    <main>
+    <div>
         <hr class="border-top">
         <hr class="border-bottom">
-        <form action="index.html">
+        <form action="index.html" method="post">
         
             <fieldset class="main-form"> 
             <legend><h2 class="contact-title">Contact Information</h2></legend>
                 
                 <div class="row">
-                    <label class="label-size" for="name">Full Name</label>
+                    <label for="name">Full Name</label>
                     <input type="text" name="user_name" id="name" placeholder="required">
                 </div>
 
@@ -45,7 +45,7 @@
 
                 <div class="row">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" type="tel" name="user_phone" id="phone">
+                    <input type="tel" name="user_phone" id="phone">
                 </div>
 
                 <div class="row">
@@ -112,22 +112,20 @@
                         </optgroup> 
                     </select>
                 </div>	
-                
-                <div class="half-width">
+
                     <div class="row">
-                        <label for="zip">Zip Code</label>
-                        <input type="text" name="user_zip" id="zip" pattern="[0-9]*">
+                        <label class="zip-label" for="zip-input">Zip Code</label>
+                        <input type="text" name="user_zip" id="zip-input" pattern="[0-9]*">
                     </div>
-                </div>
+
             </fieldset>
 
         <hr class="border-bottom">
-        
-    </main>
+    </div>
 
 <!-- Newsletter -->
-<fieldset>
-    <div class="newsletter">
+<div class="newsletter">
+    <fieldset>
         
         <legend><h2>Newsletter</h2></legend>
         <p>Select the newsletters you would like to recieve</p>
@@ -151,7 +149,7 @@
 
         <p>Newsletter format</p>
 
-        <div>
+        <div class="newsletter-format">
             <div>
                 <input type="radio" id="html-sub" name="format" value="html-sub" checked>
                 <label class="subscriptions" for="html-sub">HTML</label>
@@ -170,9 +168,9 @@
             <p><em>Copywrite The Code Review</em></p>
         </div>
         </form>
-    </div>
     
-</fieldset>
+    </fieldset>
+</div>
 
 </body>
 </html>

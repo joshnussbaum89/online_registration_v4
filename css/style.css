@@ -17,10 +17,6 @@ fieldset {
     border: none;
 }
 
-.half-width {
-    width: 50%;
-}
-
 /* -- Header -- */
 
 .banner h1 {
@@ -76,8 +72,15 @@ fieldset {
     margin: auto;
 }
 
-.padding-bottom,
 .main-form h2 {
+    padding-bottom: 1rem;
+}
+
+#other {
+    margin-top: .5rem;
+}
+
+.newsletter-format {
     padding-bottom: 1rem;
 }
 
@@ -158,6 +161,19 @@ button {
     color: rgba(128, 128, 128, .75)
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+#zip-input {
+    width: 45%;
+}
+
+.zip-label {
+    width: 20%;
+}
+
 /* -- Media Query -- */ 
 
 @media (min-width: 768px) {
@@ -174,7 +190,25 @@ button {
     
     .row {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
     }
+
+    .row label:not(.zip-label) {
+        width: 25%;
+        margin: 0;
+    }
+
+    #zip-input {
+        width: 35%;
+    }
+
+    .zip-label {
+        width: 20%;
+    }
+
 
 }
 
