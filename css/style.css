@@ -127,10 +127,10 @@ input[type="tel"]:focus,
 textarea:focus,
 #city:focus {
     background-color: aliceblue;
-    border: none;
+    border-bottom: 3px solid olivedrab;
     transition: 1s;
     box-shadow: 0px 4px 9px rgba(0,0,0,.4);
-    
+    outline: none;
 }
 
 /* -- Newsletter -- */ 
